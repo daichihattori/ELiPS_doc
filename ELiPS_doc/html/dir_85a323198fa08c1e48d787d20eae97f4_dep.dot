@@ -1,0 +1,15 @@
+digraph "ELiPS-dev/option" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b0f91877410e0db1e712090b504f088d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ELiPS-dev" fontname="Helvetica", fontsize="10", URL="dir_b0f91877410e0db1e712090b504f088d.html"]
+  subgraph clusterdir_85a323198fa08c1e48d787d20eae97f4 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_85a323198fa08c1e48d787d20eae97f4.html"];
+    dir_85a323198fa08c1e48d787d20eae97f4 [shape=plaintext label="option"];
+    dir_5c24d06a6ddfcff15c6958a051f51c6f [shape=box label="hash" color="black" fillcolor="white" style="filled" URL="dir_5c24d06a6ddfcff15c6958a051f51c6f.html"];
+  }
+  }
+  dir_5bb9aa56114ba91db9fbf8284b11bc8f [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_5bb9aa56114ba91db9fbf8284b11bc8f.html"];
+  dir_5c24d06a6ddfcff15c6958a051f51c6f->dir_5bb9aa56114ba91db9fbf8284b11bc8f [headlabel="1", labeldistance=1.5 headhref="dir_000004_000001.html"];
+}

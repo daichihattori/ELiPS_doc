@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "cost", "structcost.html", "structcost" ],
+    [ "efp12_jacobian_t", "structefp12__jacobian__t.html", "structefp12__jacobian__t" ],
+    [ "efp12_projective_t", "structefp12__projective__t.html", "structefp12__projective__t" ],
+    [ "efp12_t", "structefp12__t.html", "structefp12__t" ],
+    [ "efp2_jacobian_t", "structefp2__jacobian__t.html", "structefp2__jacobian__t" ],
+    [ "efp2_projective_t", "structefp2__projective__t.html", "structefp2__projective__t" ],
+    [ "efp2_t", "structefp2__t.html", "structefp2__t" ],
+    [ "efp6_jacobian_t", "structefp6__jacobian__t.html", "structefp6__jacobian__t" ],
+    [ "efp6_projective_t", "structefp6__projective__t.html", "structefp6__projective__t" ],
+    [ "efp6_t", "structefp6__t.html", "structefp6__t" ],
+    [ "efp_jacobian_t", "structefp__jacobian__t.html", "structefp__jacobian__t" ],
+    [ "efp_projective_t", "structefp__projective__t.html", "structefp__projective__t" ],
+    [ "efp_t", "structefp__t.html", "structefp__t" ],
+    [ "fp12_t", "structfp12__t.html", "structfp12__t" ],
+    [ "fp2_t", "structfp2__t.html", "structfp2__t" ],
+    [ "fp6_t", "structfp6__t.html", "structfp6__t" ],
+    [ "fp_t", "structfp__t.html", "structfp__t" ],
+    [ "fpd12_t", "structfpd12__t.html", "structfpd12__t" ],
+    [ "fpd2_t", "structfpd2__t.html", "structfpd2__t" ],
+    [ "fpd4cv_t", "structfpd4cv__t.html", "structfpd4cv__t" ],
+    [ "fpd6_t", "structfpd6__t.html", "structfpd6__t" ],
+    [ "fpd_t", "structfpd__t.html", "structfpd__t" ],
+    [ "fr_t", "structfr__t.html", "structfr__t" ],
+    [ "sha512_t", "structsha512__t.html", "structsha512__t" ],
+    [ "sym_t", "structsym__t.html", "structsym__t" ]
+];

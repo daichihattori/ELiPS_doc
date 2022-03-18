@@ -1,0 +1,11 @@
+digraph "ELiPS-dev/experiment" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b0f91877410e0db1e712090b504f088d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ELiPS-dev" fontname="Helvetica", fontsize="10", URL="dir_b0f91877410e0db1e712090b504f088d.html"]
+  dir_f88a586990b982fb85e0f986c0c1618e [shape=box, label="experiment", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f88a586990b982fb85e0f986c0c1618e.html"];
+  }
+  dir_5bb9aa56114ba91db9fbf8284b11bc8f [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_5bb9aa56114ba91db9fbf8284b11bc8f.html"];
+  dir_f88a586990b982fb85e0f986c0c1618e->dir_5bb9aa56114ba91db9fbf8284b11bc8f [headlabel="1", labeldistance=1.5 headhref="dir_000001_000002.html"];
+}

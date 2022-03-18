@@ -1,0 +1,11 @@
+var time_8c =
+[
+    [ "timedifference_msec", "time_8c.html#a52010f1ac9b17764160643ed651e0f7f", null ],
+    [ "timedifference_usec", "time_8c.html#a4a5e559befaed5879f0123f781c0bc37", null ],
+    [ "cost_zero", "time_8c.html#a47887979a568212e6741f7063606412f", null ],
+    [ "cost_init", "time_8c.html#a5d170e9be633cefa8a50285bfdfc1f28", null ],
+    [ "cost_check", "time_8c.html#a403f6f04fc0f47dad5ed466325edc2b3", null ],
+    [ "cost_addition", "time_8c.html#af1a89390ef443458d2c0e507216708a6", null ],
+    [ "cost_substruction", "time_8c.html#aca59f478ae1fd046e80df596c6103d25", null ],
+    [ "cost_printf", "time_8c.html#a4f136c12f69d063eabd071d2ae621d1a", null ]
+];
