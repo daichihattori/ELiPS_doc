@@ -25,7 +25,6 @@ var fp6_8c =
     [ "fp6_sub_mod", "fp6_8c.html#afa12d63f1ebb8e131c0e4cf3f9ac887f", null ],
     [ "fp6_sub_nonmod", "fp6_8c.html#adcea08289e36d58e09d0e4fedd353e2a", null ],
     [ "fpd6_sub_nonmod", "fp6_8c.html#ae4a83e482f7508639ce4aba418542d8e", null ],
-    [ "fp6_sub_mpn", "fp6_8c.html#afefa091d8370ec1522f61f73f6b7ae4c", null ],
     [ "fp6_inv_montgomery", "fp6_8c.html#a8e632a4666d575694e4555e1e9541843", null ],
     [ "fp6_cmp", "fp6_8c.html#ae4116667dfdb6c3c406fdce4e756c000", null ],
     [ "fp6_cmp_mpn", "fp6_8c.html#a02c7b716c447758fb15a73fa23437f04", null ],

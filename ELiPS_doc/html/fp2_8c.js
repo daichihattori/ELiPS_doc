@@ -36,7 +36,6 @@ var fp2_8c =
     [ "fp2_sub_mod", "fp2_8c.html#a12dca1b6b641f180f39fa10ffdc49f70", null ],
     [ "fp2_sub_nonmod", "fp2_8c.html#ad33c9819fe4a3a8e74dbe9dd7369520e", null ],
     [ "fpd2_sub_nonmod", "fp2_8c.html#aa161556f29943ba9378fe6ec616f3262", null ],
-    [ "fp2_sub_mpn", "fp2_8c.html#ad5927a11943a9b944b358cfe3fdb0617", null ],
     [ "fp2_inv_montgomery", "fp2_8c.html#a340253f96d0164b7f703950e3baf7746", null ],
     [ "fp2_sqrt_complex_method_montgomery", "fp2_8c.html#a19bbd3275432327754dfada6ca1a0156", null ],
     [ "fp2_pow_montgomery", "fp2_8c.html#a9f8dd1caee954a969bd0db3b91f57e69", null ],

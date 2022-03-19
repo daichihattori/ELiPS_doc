@@ -1,9 +1,6 @@
 var fp2_8h =
 [
     [ "fp2_init", "fp2_8h.html#a5ebb5ac39c9366c1199fbe0b9fecee01", null ],
-    [ "fp2_printf", "fp2_8h.html#a13e64107fba67c1de1135bb1153afb3f", null ],
-    [ "fp2_println", "fp2_8h.html#a0fa8cb62663b40f7fa1f2312472cafc2", null ],
-    [ "fpd2_println", "fp2_8h.html#a4a4f29d30b7f9d6e1ca8a557be4723cf", null ],
     [ "fp2_set", "fp2_8h.html#a228084a27c6d1bea7ea73dba5b0fc476", null ],
     [ "fpd2_set", "fp2_8h.html#aada3d41528d144090d6da7616ae2c341", null ],
     [ "fp2_set_ui", "fp2_8h.html#a971c0f7359fe738d7cb35ce548b84e5b", null ],
@@ -11,6 +8,13 @@ var fp2_8h =
     [ "fp2_set_mpn", "fp2_8h.html#a2b32920fb7ed516642770526b15cd2ca", null ],
     [ "fp2_set_neg_mod", "fp2_8h.html#aaaaaef83c921dfb06d17f9d0c955cf3e", null ],
     [ "fp2_set_neg_nonmod", "fp2_8h.html#a3e0a18b1c8212f7a71ae03bb30af9c90", null ],
+    [ "fp2_add_mod", "fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8", null ],
+    [ "fp2_add_nonmod", "fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1", null ],
+    [ "fpd2_add_nonmod", "fp2_8h.html#a6476d67b87ed3006150c4cc7cd4dc64f", null ],
+    [ "fp2_add_mpn", "fp2_8h.html#a06ff79168f0457dfb0560e469a81f072", null ],
+    [ "fp2_sub_mod", "fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70", null ],
+    [ "fp2_sub_nonmod", "fp2_8h.html#ad33c9819fe4a3a8e74dbe9dd7369520e", null ],
+    [ "fpd2_sub_nonmod", "fp2_8h.html#aa161556f29943ba9378fe6ec616f3262", null ],
     [ "fp2_to_montgomery", "fp2_8h.html#a2821c66a123ecb5495fe610cef1b5882", null ],
     [ "fp2_mod_montgomery", "fp2_8h.html#a9172d9bb8690be849c1ecfc3d7c7cb40", null ],
     [ "fpd2_mod_montgomery", "fp2_8h.html#ad84b71c63a1eb877e71272fc5cfabdb4", null ],
@@ -28,14 +32,6 @@ var fp2_8h =
     [ "fp2_div_basis", "fp2_8h.html#a935abb20ecb2abb107c21fdbb312ab3a", null ],
     [ "fp2_div_basis_nonmod", "fp2_8h.html#a3c29fab61f480aa61fd5720ec88688f4", null ],
     [ "fp2_sqr_mod_montgomery", "fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7", null ],
-    [ "fp2_add_mod", "fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8", null ],
-    [ "fp2_add_nonmod", "fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1", null ],
-    [ "fpd2_add_nonmod", "fp2_8h.html#a6476d67b87ed3006150c4cc7cd4dc64f", null ],
-    [ "fp2_add_mpn", "fp2_8h.html#a06ff79168f0457dfb0560e469a81f072", null ],
-    [ "fp2_sub_mod", "fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70", null ],
-    [ "fp2_sub_nonmod", "fp2_8h.html#ad33c9819fe4a3a8e74dbe9dd7369520e", null ],
-    [ "fpd2_sub_nonmod", "fp2_8h.html#aa161556f29943ba9378fe6ec616f3262", null ],
-    [ "fp2_sub_mpn", "fp2_8h.html#ad5927a11943a9b944b358cfe3fdb0617", null ],
     [ "fp2_inv_montgomery", "fp2_8h.html#a340253f96d0164b7f703950e3baf7746", null ],
     [ "fp2_sqrt_complex_method_montgomery", "fp2_8h.html#a19bbd3275432327754dfada6ca1a0156", null ],
     [ "fp2_pow_montgomery", "fp2_8h.html#a9f8dd1caee954a969bd0db3b91f57e69", null ],
@@ -46,5 +42,8 @@ var fp2_8h =
     [ "fp2_montgomery_trick_montgomery", "fp2_8h.html#acd50388e8071f1706b614c667c572a87", null ],
     [ "fp2_sqr_nonmod_montgomery", "fp2_8h.html#a67461d545806f4089fbd73e66d21aba1", null ],
     [ "fp2_mul_3_twist_b", "fp2_8h.html#ac88a06c7711456aab5c3c61faeee8b1e", null ],
-    [ "fp2_lshift_ui_nonmod", "fp2_8h.html#a3e2213fa5f0d017ad7c8632db1464115", null ]
+    [ "fp2_lshift_ui_nonmod", "fp2_8h.html#a3e2213fa5f0d017ad7c8632db1464115", null ],
+    [ "fp2_printf", "fp2_8h.html#a13e64107fba67c1de1135bb1153afb3f", null ],
+    [ "fp2_println", "fp2_8h.html#a0fa8cb62663b40f7fa1f2312472cafc2", null ],
+    [ "fpd2_println", "fp2_8h.html#a4a4f29d30b7f9d6e1ca8a557be4723cf", null ]
 ];

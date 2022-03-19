@@ -164,9 +164,6 @@ Functions</h2></td></tr>
 <tr class="separator:adcea08289e36d58e09d0e4fedd353e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a83e482f7508639ce4aba418542d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fp6_8c.html#ae4a83e482f7508639ce4aba418542d8e">fpd6_sub_nonmod</a> (<a class="el" href="structfpd6__t.html">fpd6_t</a> *ANS, <a class="el" href="structfpd6__t.html">fpd6_t</a> *A, <a class="el" href="structfpd6__t.html">fpd6_t</a> *B)</td></tr>
 <tr class="separator:ae4a83e482f7508639ce4aba418542d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afefa091d8370ec1522f61f73f6b7ae4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fp6_8c.html#afefa091d8370ec1522f61f73f6b7ae4c">fp6_sub_mpn</a> (<a class="el" href="structfp6__t.html">fp6_t</a> *ANS, <a class="el" href="structfp6__t.html">fp6_t</a> *A, mp_limb_t *B)</td></tr>
-<tr class="memdesc:afefa091d8370ec1522f61f73f6b7ae4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction a <a class="el" href="structfp6__t.html">fp6_t</a> type struct and a mpn type struct on prime field.  <a href="fp6_8c.html#afefa091d8370ec1522f61f73f6b7ae4c">More...</a><br /></td></tr>
-<tr class="separator:afefa091d8370ec1522f61f73f6b7ae4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e632a4666d575694e4555e1e9541843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fp6_8c.html#a8e632a4666d575694e4555e1e9541843">fp6_inv_montgomery</a> (<a class="el" href="structfp6__t.html">fp6_t</a> *ANS, <a class="el" href="structfp6__t.html">fp6_t</a> *A)</td></tr>
 <tr class="memdesc:a8e632a4666d575694e4555e1e9541843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert a <a class="el" href="structfp6__t.html">fp6_t</a> type struct on prime field (Lazy Reduction)  <a href="fp6_8c.html#a8e632a4666d575694e4555e1e9541843">More...</a><br /></td></tr>
 <tr class="separator:a8e632a4666d575694e4555e1e9541843"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1349,56 +1346,6 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="afefa091d8370ec1522f61f73f6b7ae4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afefa091d8370ec1522f61f73f6b7ae4c">&#9670;&nbsp;</a></span>fp6_sub_mpn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fp6_sub_mpn </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structfp6__t.html">fp6_t</a> *&#160;</td>
-          <td class="paramname"><em>ANS</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structfp6__t.html">fp6_t</a> *&#160;</td>
-          <td class="paramname"><em>A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">mp_limb_t *&#160;</td>
-          <td class="paramname"><em>B</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Subtraction a <a class="el" href="structfp6__t.html">fp6_t</a> type struct and a mpn type struct on prime field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">ANS</td><td>&ndash;a pointer of answer. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00245">245</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                     {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="fp2_8h.html#ad5927a11943a9b944b358cfe3fdb0617">fp2_sub_mpn</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, B);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="fp2_8h.html#ad5927a11943a9b944b358cfe3fdb0617">fp2_sub_mpn</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, B);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <a class="code" href="fp2_8h.html#ad5927a11943a9b944b358cfe3fdb0617">fp2_sub_mpn</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, B);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a8e632a4666d575694e4555e1e9541843"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e632a4666d575694e4555e1e9541843">&#9670;&nbsp;</a></span>fp6_inv_montgomery()</h2>
 
@@ -1434,43 +1381,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00251">251</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                              {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">static</span> <a class="code" href="structfp2__t.html">fp2_t</a> tmp1_fp2, tmp2_fp2, tmp3_fp2, tmp4_fp2, tmp5_fp2, tmp6_fp2, tmp7_fp2, tmp8_fp2;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7">fp2_sqr_mod_montgomery</a>(&amp;tmp1_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7">fp2_sqr_mod_montgomery</a>(&amp;tmp2_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <a class="code" href="fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7">fp2_sqr_mod_montgomery</a>(&amp;tmp3_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp4_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp4_fp2, &amp;tmp4_fp2);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <a class="code" href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a>(&amp;tmp6_fp2, &amp;tmp1_fp2, &amp;tmp4_fp2);  <span class="comment">// tmp6</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp4_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp7_fp2, &amp;tmp3_fp2);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <a class="code" href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a>(&amp;tmp7_fp2, &amp;tmp7_fp2, &amp;tmp4_fp2);  <span class="comment">// tmp7</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp4_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);  <span class="comment">// tmp4</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <a class="code" href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a>(&amp;tmp8_fp2, &amp;tmp2_fp2, &amp;tmp4_fp2);       <span class="comment">// tmp8</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp1_fp2, &amp;tmp1_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>);  <span class="comment">// tmp1</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp3_fp2, &amp;tmp3_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp3_fp2, &amp;tmp3_fp2);  <span class="comment">// tmp3</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <a class="code" href="fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1">fp2_add_nonmod</a>(&amp;tmp5_fp2, &amp;tmp4_fp2, &amp;tmp4_fp2);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <a class="code" href="fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1">fp2_add_nonmod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;tmp4_fp2);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="fp2_8h.html#ad33c9819fe4a3a8e74dbe9dd7369520e">fp2_sub_nonmod</a>(&amp;tmp5_fp2, &amp;tmp2_fp2, &amp;tmp5_fp2);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8">fp2_add_mod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;tmp3_fp2);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <a class="code" href="fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8">fp2_add_mod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;tmp1_fp2);  <span class="comment">// mod</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <a class="code" href="fp2_8h.html#a340253f96d0164b7f703950e3baf7746">fp2_inv_montgomery</a>(&amp;tmp5_fp2, &amp;tmp5_fp2);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;tmp6_fp2, &amp;tmp5_fp2);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;tmp7_fp2, &amp;tmp5_fp2);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, &amp;tmp8_fp2, &amp;tmp5_fp2);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00245">245</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                              {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keyword">static</span> <a class="code" href="structfp2__t.html">fp2_t</a> tmp1_fp2, tmp2_fp2, tmp3_fp2, tmp4_fp2, tmp5_fp2, tmp6_fp2, tmp7_fp2, tmp8_fp2;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <a class="code" href="fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7">fp2_sqr_mod_montgomery</a>(&amp;tmp1_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <a class="code" href="fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7">fp2_sqr_mod_montgomery</a>(&amp;tmp2_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="fp2_8h.html#a0de8d9e8814407a3b5b0e4c626f9bbf7">fp2_sqr_mod_montgomery</a>(&amp;tmp3_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp4_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp4_fp2, &amp;tmp4_fp2);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a>(&amp;tmp6_fp2, &amp;tmp1_fp2, &amp;tmp4_fp2);  <span class="comment">// tmp6</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp4_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp7_fp2, &amp;tmp3_fp2);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <a class="code" href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a>(&amp;tmp7_fp2, &amp;tmp7_fp2, &amp;tmp4_fp2);  <span class="comment">// tmp7</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp4_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);  <span class="comment">// tmp4</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <a class="code" href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a>(&amp;tmp8_fp2, &amp;tmp2_fp2, &amp;tmp4_fp2);       <span class="comment">// tmp8</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp1_fp2, &amp;tmp1_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>);  <span class="comment">// tmp1</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp3_fp2, &amp;tmp3_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp3_fp2, &amp;tmp3_fp2);  <span class="comment">// tmp3</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <a class="code" href="fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1">fp2_add_nonmod</a>(&amp;tmp5_fp2, &amp;tmp4_fp2, &amp;tmp4_fp2);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <a class="code" href="fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1">fp2_add_nonmod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;tmp4_fp2);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="fp2_8h.html#ad33c9819fe4a3a8e74dbe9dd7369520e">fp2_sub_nonmod</a>(&amp;tmp5_fp2, &amp;tmp2_fp2, &amp;tmp5_fp2);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <a class="code" href="fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8">fp2_add_mod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;tmp3_fp2);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <a class="code" href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <a class="code" href="fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8">fp2_add_mod</a>(&amp;tmp5_fp2, &amp;tmp5_fp2, &amp;tmp1_fp2);  <span class="comment">// mod</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="fp2_8h.html#a340253f96d0164b7f703950e3baf7746">fp2_inv_montgomery</a>(&amp;tmp5_fp2, &amp;tmp5_fp2);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;tmp6_fp2, &amp;tmp5_fp2);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;tmp7_fp2, &amp;tmp5_fp2);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <a class="code" href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a>(&amp;ANS-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, &amp;tmp8_fp2, &amp;tmp5_fp2);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1508,13 +1455,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00288">288</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;B-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;B-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, &amp;B-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>))</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00282">282</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, &amp;B-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, &amp;B-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, &amp;B-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>))</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1552,13 +1499,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00295">295</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                        {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, B) &amp;&amp; !<a class="code" href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, B) &amp;&amp; !<a class="code" href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, B))</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00289">289</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                                        {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>, B) &amp;&amp; !<a class="code" href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>, B) &amp;&amp; !<a class="code" href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>, B))</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1586,13 +1533,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00302">302</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                           {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>))</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00296">296</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                           {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>))</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1620,13 +1567,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00309">309</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                     {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#aab22b306e403939ad2b52cf027857db7">fp2_cmp_one_montgomery</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>))</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="fp6_8c_source.html#l00303">303</a> of file <a class="el" href="fp6_8c_source.html">fp6.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                     {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="fp2_8h.html#aab22b306e403939ad2b52cf027857db7">fp2_cmp_one_montgomery</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">x0</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">x1</a>) &amp;&amp; !<a class="code" href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a>(&amp;A-&gt;<a class="code" href="structfp6__t.html#a5f1507e5667746e1bc73cbd9ce9f7b45">x2</a>))</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1636,12 +1583,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="afp2_8h_html_a06ff79168f0457dfb0560e469a81f072"><div class="ttname"><a href="fp2_8h.html#a06ff79168f0457dfb0560e469a81f072">fp2_add_mpn</a></div><div class="ttdeci">void fp2_add_mpn(fp2_t *ANS, fp2_t *A, mp_limb_t *B)</div><div class="ttdoc">Addition a fp2_t type struct and a mpn type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00222">fp2.c:222</a></div></div>
 <div class="ttc" id="afp2_8h_html_a8f6607437834c9d2bafce7cd6f2699eb"><div class="ttname"><a href="fp2_8h.html#a8f6607437834c9d2bafce7cd6f2699eb">fp2_mul_mod_montgomery</a></div><div class="ttdeci">void fp2_mul_mod_montgomery(fp2_t *ANS, fp2_t *A, fp2_t *B)</div><div class="ttdoc">Multiplication a fp2_t type struct and a fp2_t type struct on prime field (Lazy Reduction)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00099">fp2.c:99</a></div></div>
 <div class="ttc" id="afp2_8h_html_a6476d67b87ed3006150c4cc7cd4dc64f"><div class="ttname"><a href="fp2_8h.html#a6476d67b87ed3006150c4cc7cd4dc64f">fpd2_add_nonmod</a></div><div class="ttdeci">void fpd2_add_nonmod(fpd2_t *ANS, fpd2_t *A, fpd2_t *B)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00218">fp2.c:218</a></div></div>
-<div class="ttc" id="afp2_8h_html_a3e0a18b1c8212f7a71ae03bb30af9c90"><div class="ttname"><a href="fp2_8h.html#a3e0a18b1c8212f7a71ae03bb30af9c90">fp2_set_neg_nonmod</a></div><div class="ttdeci">void fp2_set_neg_nonmod(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Negate fp2_t type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00068">fp2.c:68</a></div></div>
+<div class="ttc" id="afp2_8h_html_a3e0a18b1c8212f7a71ae03bb30af9c90"><div class="ttname"><a href="fp2_8h.html#a3e0a18b1c8212f7a71ae03bb30af9c90">fp2_set_neg_nonmod</a></div><div class="ttdeci">void fp2_set_neg_nonmod(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Negate fp2_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00068">fp2.c:68</a></div></div>
 <div class="ttc" id="adefine_8h_html_a9f8b71742e74bcfa6c4b6d38a690329d"><div class="ttname"><a href="define_8h.html#a9f8b71742e74bcfa6c4b6d38a690329d">state</a></div><div class="ttdeci">gmp_randstate_t state</div><div class="ttdef"><b>Definition:</b> <a href="define_8c_source.html#l00014">define.c:14</a></div></div>
 <div class="ttc" id="astructfpd6__t_html_a21a0ce48a24392c6466cc05f630a66bb"><div class="ttname"><a href="structfpd6__t.html#a21a0ce48a24392c6466cc05f630a66bb">fpd6_t::x0</a></div><div class="ttdeci">fpd2_t x0</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00113">define.h:113</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_a6656bac7e26be9240d60e6ca5d880223"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#a6656bac7e26be9240d60e6ca5d880223">fpd_set</a></div><div class="ttdeci">void fpd_set(fpd_t *ANS, fpd_t *A)</div><div class="ttdoc">Set a fpd_t type struct to a fpd_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00014">fp.c:14</a></div></div>
 <div class="ttc" id="afp2_8h_html_a2113542c41555e76fd1607c7bfc9e47e"><div class="ttname"><a href="fp2_8h.html#a2113542c41555e76fd1607c7bfc9e47e">fp2_set_random</a></div><div class="ttdeci">void fp2_set_random(fp2_t *ANS, gmp_randstate_t state)</div><div class="ttdoc">Set a random number to a fp2_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00089">fp2.c:89</a></div></div>
-<div class="ttc" id="afp2_8h_html_aada3d41528d144090d6da7616ae2c341"><div class="ttname"><a href="fp2_8h.html#aada3d41528d144090d6da7616ae2c341">fpd2_set</a></div><div class="ttdeci">void fpd2_set(fpd2_t *ANS, fpd2_t *A)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00044">fp2.c:44</a></div></div>
+<div class="ttc" id="afp2_8h_html_aada3d41528d144090d6da7616ae2c341"><div class="ttname"><a href="fp2_8h.html#aada3d41528d144090d6da7616ae2c341">fpd2_set</a></div><div class="ttdeci">void fpd2_set(fpd2_t *ANS, fpd2_t *A)</div><div class="ttdoc">Set a fpd2_t type struct to a fpd2_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00044">fp2.c:44</a></div></div>
 <div class="ttc" id="afp2_8h_html_a31e2437384d2623d0d466ef11acaf3e8"><div class="ttname"><a href="fp2_8h.html#a31e2437384d2623d0d466ef11acaf3e8">fp2_add_mod</a></div><div class="ttdeci">void fp2_add_mod(fp2_t *ANS, fp2_t *A, fp2_t *B)</div><div class="ttdoc">Addition a fp2_t type struct and a fp2_t type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00209">fp2.c:209</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_a522f62983ec09b53d20b72fb5bef158d"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#a522f62983ec09b53d20b72fb5bef158d">fp_sub_nonmod</a></div><div class="ttdeci">void fp_sub_nonmod(fp_t *ANS, fp_t *A, fp_t *B)</div><div class="ttdoc">Subtraction a fp_t type struct and a fp_t type struct. It can work nonmod A and B.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00085">fp.c:85</a></div></div>
 <div class="ttc" id="astructfp6__t_html_a4685eaecf64b830be9c3c43c0d666496"><div class="ttname"><a href="structfp6__t.html#a4685eaecf64b830be9c3c43c0d666496">fp6_t::x1</a></div><div class="ttdeci">fp2_t x1</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00093">define.h:93</a></div></div>
@@ -1652,27 +1599,26 @@ Functions</h2></td></tr>
 <div class="ttc" id="astructfp2__t_html_a53c9ca221f206658a04d2e7a0e45564f"><div class="ttname"><a href="structfp2__t.html#a53c9ca221f206658a04d2e7a0e45564f">fp2_t::x0</a></div><div class="ttdeci">fp_t x0</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00089">define.h:89</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_af45c25a01b09d7b56ac9863a0e358d08"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#af45c25a01b09d7b56ac9863a0e358d08">fpd_add_nonmod</a></div><div class="ttdeci">void fpd_add_nonmod(fpd_t *ANS, fpd_t *A, fpd_t *B)</div><div class="ttdoc">Just addition a fpd_t type struct and a fpd_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00065">fp.c:65</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_a2fbdbb30156e1a6026c72a788bff4ab9"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#a2fbdbb30156e1a6026c72a788bff4ab9">fp_set</a></div><div class="ttdeci">void fp_set(fp_t *ANS, fp_t *A)</div><div class="ttdoc">Set a fp_t type struct to a fp_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00010">fp.c:10</a></div></div>
-<div class="ttc" id="afp2_8h_html_a340253f96d0164b7f703950e3baf7746"><div class="ttname"><a href="fp2_8h.html#a340253f96d0164b7f703950e3baf7746">fp2_inv_montgomery</a></div><div class="ttdeci">void fp2_inv_montgomery(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Invert a fp2_t type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00244">fp2.c:244</a></div></div>
+<div class="ttc" id="afp2_8h_html_a340253f96d0164b7f703950e3baf7746"><div class="ttname"><a href="fp2_8h.html#a340253f96d0164b7f703950e3baf7746">fp2_inv_montgomery</a></div><div class="ttdeci">void fp2_inv_montgomery(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Invert a fp2_t type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00239">fp2.c:239</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_a1186930031762d6631b29f13d823d60f"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#a1186930031762d6631b29f13d823d60f">fp_add_nonmod</a></div><div class="ttdeci">void fp_add_nonmod(fp_t *ANS, fp_t *A, fp_t *B)</div><div class="ttdoc">Just addition a fp_t type struct and a fp_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00058">fp.c:58</a></div></div>
 <div class="ttc" id="afp2_8h_html_a2821c66a123ecb5495fe610cef1b5882"><div class="ttname"><a href="fp2_8h.html#a2821c66a123ecb5495fe610cef1b5882">fp2_to_montgomery</a></div><div class="ttdeci">void fp2_to_montgomery(fp2_t *ANS, fp2_t *A)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00072">fp2.c:72</a></div></div>
-<div class="ttc" id="afp2_8h_html_a6dfd136688abf6fa24ca9bd0dcf178ed"><div class="ttname"><a href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a></div><div class="ttdeci">int fp2_cmp(fp2_t *A, fp2_t *B)</div><div class="ttdoc">Compare fp2_t type construct and fp2_t type construct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00335">fp2.c:335</a></div></div>
+<div class="ttc" id="afp2_8h_html_a6dfd136688abf6fa24ca9bd0dcf178ed"><div class="ttname"><a href="fp2_8h.html#a6dfd136688abf6fa24ca9bd0dcf178ed">fp2_cmp</a></div><div class="ttdeci">int fp2_cmp(fp2_t *A, fp2_t *B)</div><div class="ttdoc">Compare fp2_t type construct and fp2_t type construct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00330">fp2.c:330</a></div></div>
 <div class="ttc" id="afp2_8h_html_ab821eb7c1028b48f37b172cabe3f9364"><div class="ttname"><a href="fp2_8h.html#ab821eb7c1028b48f37b172cabe3f9364">fp2_mul_basis_mod</a></div><div class="ttdeci">void fp2_mul_basis_mod(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Multiplication a fp2_t type struct and alpha on prime field A*beta^2.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00154">fp2.c:154</a></div></div>
 <div class="ttc" id="astructfpd6__t_html_a2d6795ce6fcbfb0dcc35abde537273ca"><div class="ttname"><a href="structfpd6__t.html#a2d6795ce6fcbfb0dcc35abde537273ca">fpd6_t::x2</a></div><div class="ttdeci">fpd2_t x2</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00113">define.h:113</a></div></div>
-<div class="ttc" id="afp2_8h_html_aab22b306e403939ad2b52cf027857db7"><div class="ttname"><a href="fp2_8h.html#aab22b306e403939ad2b52cf027857db7">fp2_cmp_one_montgomery</a></div><div class="ttdeci">int fp2_cmp_one_montgomery(fp2_t *A)</div><div class="ttdoc">Compare fp2_t type struct and one.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00354">fp2.c:354</a></div></div>
+<div class="ttc" id="afp2_8h_html_aab22b306e403939ad2b52cf027857db7"><div class="ttname"><a href="fp2_8h.html#aab22b306e403939ad2b52cf027857db7">fp2_cmp_one_montgomery</a></div><div class="ttdeci">int fp2_cmp_one_montgomery(fp2_t *A)</div><div class="ttdoc">Compare fp2_t type struct and one.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00349">fp2.c:349</a></div></div>
 <div class="ttc" id="astructfpd2__t_html_a133f128bdd627e3ce241faa53f11cb7d"><div class="ttname"><a href="structfpd2__t.html#a133f128bdd627e3ce241faa53f11cb7d">fpd2_t::x1</a></div><div class="ttdeci">fpd_t x1</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00110">define.h:110</a></div></div>
 <div class="ttc" id="astructfpd2__t_html_af993fd95e69c3dd422e5ad239c0815c8"><div class="ttname"><a href="structfpd2__t.html#af993fd95e69c3dd422e5ad239c0815c8">fpd2_t::x0</a></div><div class="ttdeci">fpd_t x0</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00109">define.h:109</a></div></div>
-<div class="ttc" id="afp2_8h_html_ad5927a11943a9b944b358cfe3fdb0617"><div class="ttname"><a href="fp2_8h.html#ad5927a11943a9b944b358cfe3fdb0617">fp2_sub_mpn</a></div><div class="ttdeci">void fp2_sub_mpn(fp2_t *ANS, fp2_t *A, mp_limb_t *B)</div><div class="ttdoc">Subtraction a fp2_t type struct and a mpn type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00239">fp2.c:239</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_af3a8e7c0f95ee889079b6914944d623b"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#af3a8e7c0f95ee889079b6914944d623b">fpd_sub_nonmod</a></div><div class="ttdeci">void fpd_sub_nonmod(fpd_t *ANS, fpd_t *A, fpd_t *B)</div><div class="ttdoc">Subtraction a fpd_t type struct and a fpd_t type struct. It can work nonmod A and B.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00095">fp.c:95</a></div></div>
 <div class="ttc" id="afp2_8h_html_a9172d9bb8690be849c1ecfc3d7c7cb40"><div class="ttname"><a href="fp2_8h.html#a9172d9bb8690be849c1ecfc3d7c7cb40">fp2_mod_montgomery</a></div><div class="ttdeci">void fp2_mod_montgomery(fp2_t *ANS, fp2_t *A)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00076">fp2.c:76</a></div></div>
 <div class="ttc" id="afp2_8h_html_a971c0f7359fe738d7cb35ce548b84e5b"><div class="ttname"><a href="fp2_8h.html#a971c0f7359fe738d7cb35ce548b84e5b">fp2_set_ui</a></div><div class="ttdeci">void fp2_set_ui(fp2_t *ANS, unsigned long int UI)</div><div class="ttdoc">Set an unsigned int to a fp2_t type struct (x0=UI,x1=0)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00049">fp2.c:49</a></div></div>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_adf20280f1f8ccc4a8da3afc11df14175"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#adf20280f1f8ccc4a8da3afc11df14175">fp_add_mod</a></div><div class="ttdeci">void fp_add_mod(fp_t *ANS, fp_t *A, fp_t *B)</div><div class="ttdoc">Addition a fp_t type struct and a fp_t type struct and Modulo it.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00046">fp.c:46</a></div></div>
 <div class="ttc" id="afp2_8h_html_a228084a27c6d1bea7ea73dba5b0fc476"><div class="ttname"><a href="fp2_8h.html#a228084a27c6d1bea7ea73dba5b0fc476">fp2_set</a></div><div class="ttdeci">void fp2_set(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Set a fp2_t type struct to a fp2_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00040">fp2.c:40</a></div></div>
 <div class="ttc" id="afp2_8h_html_ad84b71c63a1eb877e71272fc5cfabdb4"><div class="ttname"><a href="fp2_8h.html#ad84b71c63a1eb877e71272fc5cfabdb4">fpd2_mod_montgomery</a></div><div class="ttdeci">void fpd2_mod_montgomery(fp2_t *ANS, fpd2_t *A)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00080">fp2.c:80</a></div></div>
-<div class="ttc" id="afp2_8h_html_a3c9b1ed9f4e875ad2ecac2c1ecc09acc"><div class="ttname"><a href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a></div><div class="ttdeci">int fp2_cmp_zero(fp2_t *A)</div><div class="ttdoc">Compare fp2_t type struct and zero.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00349">fp2.c:349</a></div></div>
+<div class="ttc" id="afp2_8h_html_a3c9b1ed9f4e875ad2ecac2c1ecc09acc"><div class="ttname"><a href="fp2_8h.html#a3c9b1ed9f4e875ad2ecac2c1ecc09acc">fp2_cmp_zero</a></div><div class="ttdeci">int fp2_cmp_zero(fp2_t *A)</div><div class="ttdoc">Compare fp2_t type struct and zero.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00344">fp2.c:344</a></div></div>
 <div class="ttc" id="afp2_8h_html_ad33c9819fe4a3a8e74dbe9dd7369520e"><div class="ttname"><a href="fp2_8h.html#ad33c9819fe4a3a8e74dbe9dd7369520e">fp2_sub_nonmod</a></div><div class="ttdeci">void fp2_sub_nonmod(fp2_t *ANS, fp2_t *A, fp2_t *B)</div><div class="ttdoc">Subtraction a fp2_t type struct and a fp2_t type struct on prime field (Lazy Reduction)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00230">fp2.c:230</a></div></div>
 <div class="ttc" id="astructfp2__t_html"><div class="ttname"><a href="structfp2__t.html">fp2_t</a></div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00088">define.h:88</a></div></div>
 <div class="ttc" id="afp2_8h_html_a2b32920fb7ed516642770526b15cd2ca"><div class="ttname"><a href="fp2_8h.html#a2b32920fb7ed516642770526b15cd2ca">fp2_set_mpn</a></div><div class="ttdeci">void fp2_set_mpn(fp2_t *ANS, mp_limb_t *A)</div><div class="ttdoc">Set a mpn type struct to a fp2_t type struct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00058">fp2.c:58</a></div></div>
-<div class="ttc" id="afp2_8h_html_aaaaaef83c921dfb06d17f9d0c955cf3e"><div class="ttname"><a href="fp2_8h.html#aaaaaef83c921dfb06d17f9d0c955cf3e">fp2_set_neg_mod</a></div><div class="ttdeci">void fp2_set_neg_mod(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Negate fp2_t type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00063">fp2.c:63</a></div></div>
+<div class="ttc" id="afp2_8h_html_aaaaaef83c921dfb06d17f9d0c955cf3e"><div class="ttname"><a href="fp2_8h.html#aaaaaef83c921dfb06d17f9d0c955cf3e">fp2_set_neg_mod</a></div><div class="ttdeci">void fp2_set_neg_mod(fp2_t *ANS, fp2_t *A)</div><div class="ttdoc">Negate fp2_t type struct and modulo it.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00063">fp2.c:63</a></div></div>
 <div class="ttc" id="afp2_8h_html_a12dca1b6b641f180f39fa10ffdc49f70"><div class="ttname"><a href="fp2_8h.html#a12dca1b6b641f180f39fa10ffdc49f70">fp2_sub_mod</a></div><div class="ttdeci">void fp2_sub_mod(fp2_t *ANS, fp2_t *A, fp2_t *B)</div><div class="ttdoc">Subtraction a fp2_t type struct and a fp2_t type struct on prime field.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00226">fp2.c:226</a></div></div>
 <div class="ttc" id="astructfp2__t_html_a758b97c73990a0a5d873b2b9a22c03a2"><div class="ttname"><a href="structfp2__t.html#a758b97c73990a0a5d873b2b9a22c03a2">fp2_t::x1</a></div><div class="ttdeci">fp_t x1</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00090">define.h:90</a></div></div>
 <div class="ttc" id="afp2_8h_html_ad79d56df65fc1fb8c45377884303ebd1"><div class="ttname"><a href="fp2_8h.html#ad79d56df65fc1fb8c45377884303ebd1">fp2_add_nonmod</a></div><div class="ttdeci">void fp2_add_nonmod(fp2_t *ANS, fp2_t *A, fp2_t *B)</div><div class="ttdoc">Addition a fp2_t type struct and a fp2_t type struct on prime field (Lazy Reduction)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00214">fp2.c:214</a></div></div>
@@ -1681,7 +1627,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="ainclude_2ELiPS_2fp_8h_html_a36f0aeef63326cf44d16bd6c4791a265"><div class="ttname"><a href="include_2ELiPS_2fp_8h.html#a36f0aeef63326cf44d16bd6c4791a265">fp_sub_mod</a></div><div class="ttdeci">void fp_sub_mod(fp_t *ANS, fp_t *A, fp_t *B)</div><div class="ttdoc">Subtraction a fp_t type struct and a fp_t type struct and Modulo it.</div><div class="ttdef"><b>Definition:</b> <a href="fp_8c_source.html#l00072">fp.c:72</a></div></div>
 <div class="ttc" id="afp2_8h_html_a8cb3c0c2886240d1ecb176e5b2bea455"><div class="ttname"><a href="fp2_8h.html#a8cb3c0c2886240d1ecb176e5b2bea455">fp2_mul_basis_nonmod_double</a></div><div class="ttdeci">void fp2_mul_basis_nonmod_double(fpd2_t *ANS, fpd2_t *A)</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00169">fp2.c:169</a></div></div>
 <div class="ttc" id="astructfp6__t_html_ad3bf31026eeb527beb66c0f05e4d0df0"><div class="ttname"><a href="structfp6__t.html#ad3bf31026eeb527beb66c0f05e4d0df0">fp6_t::x0</a></div><div class="ttdeci">fp2_t x0</div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00093">define.h:93</a></div></div>
-<div class="ttc" id="afp2_8h_html_a27d138af7ed3a1b943472881aea805a0"><div class="ttname"><a href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a></div><div class="ttdeci">int fp2_cmp_mpn(fp2_t *A, mp_limb_t *B)</div><div class="ttdoc">Compare fp2_t type construct and mpn type construct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00342">fp2.c:342</a></div></div>
+<div class="ttc" id="afp2_8h_html_a27d138af7ed3a1b943472881aea805a0"><div class="ttname"><a href="fp2_8h.html#a27d138af7ed3a1b943472881aea805a0">fp2_cmp_mpn</a></div><div class="ttdeci">int fp2_cmp_mpn(fp2_t *A, mp_limb_t *B)</div><div class="ttdoc">Compare fp2_t type construct and mpn type construct.</div><div class="ttdef"><b>Definition:</b> <a href="fp2_8c_source.html#l00337">fp2.c:337</a></div></div>
 <div class="ttc" id="astructfpd2__t_html"><div class="ttname"><a href="structfpd2__t.html">fpd2_t</a></div><div class="ttdef"><b>Definition:</b> <a href="define_8h_source.html#l00108">define.h:108</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

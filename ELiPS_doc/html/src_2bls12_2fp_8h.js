@@ -16,7 +16,7 @@ var src_2bls12_2fp_8h =
     [ "fp_sub_mod", "src_2bls12_2fp_8h.html#a36f0aeef63326cf44d16bd6c4791a265", null ],
     [ "fp_sub_nonmod", "src_2bls12_2fp_8h.html#a522f62983ec09b53d20b72fb5bef158d", null ],
     [ "fpd_sub_nonmod", "src_2bls12_2fp_8h.html#af3a8e7c0f95ee889079b6914944d623b", null ],
-    [ "fp_sub_mpn", "src_2bls12_2fp_8h.html#ab6450c04dce71099e44a1766c699b422", null ],
+    [ "fp_sub_mpn_mod", "src_2bls12_2fp_8h.html#a685484c381158851462cdb666de122ca", null ],
     [ "fp_mul_nonmod", "src_2bls12_2fp_8h.html#abdd74f622808164179a3e7d20c618e58", null ],
     [ "fp_mul_mod_montgomery", "src_2bls12_2fp_8h.html#a42d3eafa9e462ff492059a48dff1705b", null ],
     [ "fp_mul_ui", "src_2bls12_2fp_8h.html#aac447631c7b1ada0401de5693b62024f", null ],
